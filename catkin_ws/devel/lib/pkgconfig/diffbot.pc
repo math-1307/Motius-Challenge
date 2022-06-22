@@ -1,0 +1,8 @@
+prefix=/home/vamika/ROS/Motius_Challenge/catkin_ws/devel
+
+Name: diffbot
+Description: Description of diffbot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

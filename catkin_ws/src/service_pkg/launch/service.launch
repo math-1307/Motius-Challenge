@@ -1,0 +1,11 @@
+ <launch>
+ 
+  <!-- The Server node -->
+  <node name="server" type="server.py" pkg="service_pkg" output="screen">
+  </node>
+
+  <!-- The Client Node node -->
+  <node name="client" type="client" pkg="service_pkg" output="screen">
+  </node>
+
+</launch>
