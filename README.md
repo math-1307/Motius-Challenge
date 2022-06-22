@@ -1,24 +1,24 @@
 # Motius-Challenge
-White Ball Follower -  Differential Drive Mobile Robot
-**Auhtor:** Mathew Emmanuel Augustine
+White Ball Follower -  Differential Drive Mobile Robot <br />
+**Author:** Mathew Emmanuel Augustine
 
 # Coding Challenge from Motius
 ## Task
 To perform a task in ROS in which one node requests and the other node responds.
 In the task files attached, two nodes are created of which
-1. one is a **Service Server Node** (Also a publisher)
-2. the other is a **Service Client Node** (Also a subscriber)
+1. one is a **Service Client Node** (Also a subscriber)
+2. the other is a **Service Server Node** (Also a publisher)
 
 ## Structure of the Nodes
 ### SERVICE CLIENT NODE [client.cpp](https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/client.cpp)
 * Subscribes to /camera/rgb/image_raw
-* Identifies the presence of a white ball & its position(Callback function)
+* Identifies the presence of a white ball & its position (Callback function)
 * Generates velocity values and
-* Requests a service command_robot from server node to move
+* Requests the server node to move using a service 'command_robot'
 
 ### SERVICE SERVER NODE [server.py](https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/server.py)
-* Receives a request from the command_robot service
-* Assigns the velocity values to Twist messages
+* Receives a request from the 'command_robot' service
+* Assigns the velocity values from service request messages to Twist messages
 * Publishes these messages to /cmd_vel topic to move the robot
 
 ## SOFTWARE PREREQUISITES
@@ -40,7 +40,7 @@ In the task files attached, two nodes are created of which
 4. ./motius_challenge.sh
 
 ## WORKING OF THE TASK
-Tha Objective is to make the mobile robot autonomously navigate towards the white ball which in turn is manually moved.
+The objective is to make the mobile robot autonomously navigate towards the white ball which in turn is manually moved.
 https://user-images.githubusercontent.com/107972931/174938401-da59a02f-85f0-4493-9e9e-251eb1abdb87.mp4
 [![asciicast](https://github.com/math-1307/Motius-Challenge/blob/main/Related%20Docs/Thumbnail.png)](https://github.com/math-1307/Motius-Challenge/blob/main/Related%20Docs/Ball_Follower.mp4)
 
