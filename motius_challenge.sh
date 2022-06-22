@@ -1,6 +1,7 @@
 #!/bin/sh
 
 xterm  -e  " killall gzserver; killall gzclient" &
+
 sleep 1
 
 xterm  -e  " $(pwd)/catkin_ws; catkin_make; source devel/setup.bash; roslaunch diffbot world.launch" &
