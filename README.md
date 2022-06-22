@@ -1,5 +1,6 @@
 # Motius-Challenge
 White Ball Follower -  Differential Drive Mobile Robot
+**Auhtor:** Mathew Emmanuel Augustine
 
 # Coding Challenge from Motius
 ## Task
