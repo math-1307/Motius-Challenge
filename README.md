@@ -7,18 +7,16 @@ White Ball Follower -  Differential Drive Mobile Robot
 To perform a task in ROS in which one node requests and the other node responds.
 In the task files attached, two nodes are created of which
 1. one is a **Service Server Node** (Also a publisher)
-   https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/server.py
 2. the other is a **Service Client Node** (Also a subscriber)
-   https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/client.cpp
 
 ## Structure of the Nodes
-### SERVICE CLIENT NODE
+### SERVICE CLIENT NODE [client.cpp](https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/client.cpp)
 * Subscribes to /camera/rgb/image_raw
 * Identifies the presence of a white ball & its position(Callback function)
 * Generates velocity values and
 * Requests a service command_robot from server node to move
 
-### SERVICE SERVER NODE
+### SERVICE SERVER NODE [server.py](https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/server.py)
 * Receives a request from the command_robot service
 * Assigns the velocity values to Twist messages
 * Publishes these messages to /cmd_vel topic to move the robot
