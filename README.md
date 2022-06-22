@@ -26,18 +26,18 @@ In the task files attached, two nodes are created of which
 
 ## TASK EXECUTION
 ### Method 1
-1. Install xterm using the command sudo apt-get install xterm
-2. Navigate to **~/Motius_Chsllenge** and enter the following commands
-3. chmod +x motius_challenge.sh
-4. ./motius_challenge
-
-### Method 2
-1. Navigate to **~/Motius_Chsllenge/catkin_ws** and enter the following commands
+1. Navigate to **~/Motius_Challenge/catkin_ws** and enter the following commands
 2. catkin_make
 3. Source the terminal: source devel/setup.bash
 4. roslaunch diffbot world.launch
 5. Open new terminal and source
 6. roslaunch service_pkg service.launch
+
+### Method 2
+1. Install xterm using the command sudo apt-get install xterm
+2. Navigate to **~/Motius_Challenge** and enter the following commands
+3. chmod +x motius_challenge.sh
+4. ./motius_challenge.sh
 
 ## WORKING OF THE TASK
 Tha Objective is to make the mobile robot autonomously navigate towards the white ball which in turn is manually moved.
