@@ -4,7 +4,7 @@ White Ball Follower -  Differential Drive Mobile Robot
 # Coding Challenge from Motius
 ## Task
 To perform a task in ROS in which one node requests and the other node responds.
-In the task files attached, two nodes of which
+In the task files attached, two nodes are created of which
 1. one is a **Service Server Node** (Also a publisher)
    https://github.com/math-1307/Motius-Challenge/blob/main/catkin_ws/src/service_pkg/src/server.py
 2. the other is a **Service Client Node** (Also a subscriber)
